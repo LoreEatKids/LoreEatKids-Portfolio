@@ -1,0 +1,89 @@
+@include screen-lg {
+    .menu {display: none;}
+
+    header {
+        padding: 5% 100px !important;
+        justify-content: center;
+    }
+    .project {
+        width: 40%;
+    }
+
+}
+
+@include screen-md {
+    .yellow{ 
+        height: auto !important; 
+
+        .projects-container { padding: 5% 0 }
+    }
+
+    .container {
+        scroll-snap-type: unset !important;
+    }
+
+    .infos__title {
+        font-size: 53px !important;
+        line-height: 42px !important;
+    }
+
+    @media screen and (max-width: 1150px) {
+            .blue {height: auto !important;}
+            .blue,
+            .yellow,
+            .green {background-image: unset !important;}
+
+            .project {
+                min-width: 446px !important;
+                height: 261px !important;
+
+                .row {
+                    flex-direction: row;
+                }
+            }
+
+            header {
+                padding: 5% 5% !important;
+                flex-direction: column !important;
+                .infos-container {padding-top: 50px;}
+                .card-container {margin-right: 0 !important;}
+            }
+
+            main {
+                padding: 0 10% 10% 10% !important;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .infos-container {
+                display: block !important;
+                text-align: center;
+                padding-top: 40px !important;
+
+                .infos__title {
+                    padding-right: 0 !important;
+                    margin-bottom: 20px;
+                    font-size: 50px !important;
+                    line-height: 47px !important;
+                }
+
+                .infos__title-desc {
+                    margin: 40px 0;
+                }
+            }
+
+        @media screen and (max-width: 600px) {
+            main .row { 
+                flex-direction: column; 
+                margin-top: 20px;
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            main .row {
+                gap: 60px;
+            }
+        }
+    }
+}

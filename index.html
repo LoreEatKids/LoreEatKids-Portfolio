@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="https://kit.fontawesome.com/174d2a9ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/main.css">
+    <title>LoreEatKids Home</title>
+</head>
+<body>
+    <div class="container">
+        <section class="blue" id="home">
+            <div class="menu d-f s-b">
+
+                <div class="menu__top">
+                    <h1 class="menu_title_active">L</h1>
+                    <div class="menu_title">
+                        <h1 class="menu_top_title">Welcome,</h1>
+                    </div>
+                    <div class="menu_desc">
+                        <p class="desc d-n">Your Web Developer.</p>
+                        <p class="descNa">take your time ☕.</p>
+                    </div>
+                </div>
+
+                <div class="menu__center">
+                    <ul class="menu_about">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#works">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="hamburger-container">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu__bottom">
+                   <a href="#works" class="menu__works">My Projects</a>
+                </div>
+
+            </div>
+
+            <header class="d-f">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front"> <img src="../static/buzz.webp" class="buzz" draggable="false" alt="Literally Me" /> </div>
+                        <div class="card-back"> <h1>That's me!</h1> </div>
+                    </div>
+                </div>
+                <div class="infos-container d-f">
+                    <h1 class="infos__title">LORE <span>-</span> <br> EAT<span>-</span> <br> KIDS<span>-</span> </h1>
+                    <p class="infos__title-desc">
+                        A <span>Web Developer</span> with a passion for design, dedicated to crafting increasingly complex user-friendly Web Apps that are as aesthetically pleasing as they are functionally robust. <br><br>
+                        I thrive in team environments, relish the opportunity to learn new technologies, and revel in witnessing firsthand the ever-evolving landscape of the tech industry.
+                    </p>
+                </div>
+            </header>
+
+            <main>
+                <h1 class="main-title">How i work...</h1>
+                <div class="row d-f s-b">
+                    <div class="column d-f">
+                        <h2 data-step="01">Before</h2>
+                        <ul>
+                            <li>Collect Ideas</li>
+                            <li>Design</li>
+                            <li>Draw</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="column d-f">
+                        <h2  data-step="02">Working</h2>
+                        <ul>
+                            <li>Find The Best Way</li>
+                            <li>First Sketch</li>
+                            <li>Revisions</li>
+                            <li>Dry Code</li>
+                        </ul>
+                    </div>
+                    <div class="column d-f">
+                        <h2 data-step="03">After</h2>
+                        <ul>
+                            <li>Hosting</li>
+                            <li>Facilities</li>
+                            <li>New Revisions</li>
+                            <li>Look Forwards</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <section class="yellow" id="works">
+            <section class="red">
+                <aside class="d-f">
+                    <div class="red_container d-f">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#aboutme">About Me</a></li>
+                            <li><a href="#works">Projects</a></li>
+                        </ul>
+                        <div class="red_container__forms">
+                            <form action="https://formsubmit.co/xmc90478aa@protonmail.com" class="d-f" method="POST">
+                                <h1>Let's get in touch.</h1>
+                                <input type="text" name="name" placeholder="Full Name" required>
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <div class="red_container__forms-textarea d-f">
+                                    <h2>Message:</h2>
+                                    <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+                                </div>
+                                <button type="submit">Submit →</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="socials d-f">
+                        <i class="fa-brands fa-github" style="color: #fff;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #fff"></i>
+                        <i class="fa-brands fa-twitter" style="color: #fff"></i>
+                    </div>
+                </aside>
+            </section>
+
+            <div class="projects-container">
+                <h1 class="works__title">New & Old Projects →</h1>
+                <div class="projects-wrapper">
+                    <div class="row">
+                        <div class="project">
+                            <div class="project-child" id="minecraft">
+                                <a href="https://mc-crafting-table.netlify.app/" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="project" id="marketplace">
+                            <div class="project">
+                                <div class="project-child" id="marketplace">
+                                    <a href="https://marketplace-react.netlify.app/" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="project"></div>
+                        <div class="project"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="green" id="aboutme"></section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="scripts/gsap.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

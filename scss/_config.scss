@@ -1,0 +1,74 @@
+$blue-page-bg: #4801ff;
+$yellow-page-bg: #FFCC00;
+$red-page-bg: #ff2f00;
+$blue-text: #000080;
+$black-sub-text: #0f0f0f;
+
+*, html {
+    scroll-behavior: smooth !important;
+}
+
+* {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'aelvetica Neue', sans-serif;
+}
+
+a { text-decoration: none; }
+ul li { list-style-type: none; }
+li { position: relative; }
+
+.d-f {display: flex; align-items: center;}
+.d-n {display: none !important;}
+.s-b {justify-content: space-between;}
+.title-t {transition: left 1.3s ease-in-out;}
+.title-t2 {transform: left 100ms ease-out;}
+
+input {
+    background: none;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+textarea {
+    background: none;
+    border: none;
+    outline: none
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none
+}
+
+html, body {
+    cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+@mixin screen-lg {
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin screen-md {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin screen-sl {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
