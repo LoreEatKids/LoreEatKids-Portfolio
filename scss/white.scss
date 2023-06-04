@@ -1,0 +1,53 @@
+.white {
+  background-color: $white-page-bg;
+  * { color: $white-page-text; }
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+
+    &__title { 
+      font-size: 35px !important;
+      margin-bottom: 40px; 
+    }
+    &__articles { gap: 150px; }
+
+    h1 { 
+      font-family: "Brice"; 
+      font-size: 29px;
+      letter-spacing: .7px;
+      padding-bottom: 10px;
+    }
+
+    article {
+      width: clamp(400px, 400px, 400px);
+
+      div {
+        h1 { font-size: 29px; }
+        &.experience {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &.stacks { 
+          flex-direction: column;
+
+          &__icons {
+            display: flex;
+            gap: 15px;
+
+            i { font-size: 29px; }
+          }
+        }
+
+        &.fields p { font-style: unset !important; }
+
+        &:not(:last-child) { padding-bottom: 40px; }
+        span:not(:last-child) { padding-bottom: 16px; }
+
+        * { font-size: 19px; }
+        p { font-style: italic; }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "config";
+
+.red {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: $red-page-bg;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+
+    aside {
+        padding: 250px;
+        padding-left: 270px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 100%;
+
+        .red_container {
+            width: 100%;
+            justify-content: space-between;
+            align-items: unset !important;
+
+            &__forms {
+                form {
+                    flex-direction: column;
+
+                    h1 {
+                        color: #fff;
+                        text-align: left;
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                input {
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 10px;
+                    color: #fff;
+                    font-size: 15px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+
+                textarea {
+                    width: clamp(430px, 430px, 430px) !important;
+                    height: clamp(115px, 115px, 115px) !important;
+                    padding: 3px;
+                    color: #efecec;
+                }
+
+                &-textarea {
+                    margin-top: 16px;
+                    align-items: unset !important;
+
+                    h2 {
+                        color: #fff;
+                        margin-right: 40px;
+                        font-size: 19px;
+                    }
+                }
+
+                button {
+                    color: #fff;
+                    font-size: 20px;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        border-bottom: 2px solid #fff;
+                        transition: width 300ms ease-in-out;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 0%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        ul li {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            transition: 400ms ease-out;
+
+            a {
+                color: #fff;
+            }
+
+            &:hover {
+                opacity: .4;
+            }
+        }
+
+        .socials {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+
+            i {
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.red.active {
+    transform: unset;
+}

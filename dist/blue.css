@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "aelvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.d-n {
+  display: none !important;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+input {
+  background: none;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+html, body {
+  cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.blue {
+  background-color: #4801ff;
+  background-image: url("/static/wave.webp");
+  background-position: center bottom;
+}
+.blue .menu {
+  position: fixed;
+  z-index: 2;
+  padding: 3.6rem 6rem;
+  padding-right: 0;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+}
+.blue .menu.active div * {
+  color: #000080;
+}
+.blue .menu h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+.blue .menu p {
+  font-size: 19px;
+  padding-left: 4px;
+}
+.blue .menu > .menu__top {
+  overflow: hidden;
+}
+
+.menu__bottom {
+  overflow: hidden;
+}
+
+.menu__works {
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  transition: left 800ms ease-out;
+}
+
+/* menu_top transition style */
+.menu_top_title {
+  position: relative;
+  left: 0;
+  transition: left 600ms ease-out;
+}
+
+/* title swap */
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+.menu_title_active {
+  position: relative;
+  top: 35px;
+  left: -50px;
+  transition: left 1s ease-in-out;
+}
+
+/* center */
+.hamburger-container {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transition: left 1000ms ease-out;
+}
+
+.hamburger {
+  min-width: 120px;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  background: #7e7d7d;
+  width: 24px;
+  height: 3px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.hamburger span:nth-child(1) {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.38, 1);
+}
+.hamburger span:nth-child(2) {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.38, 1) 0.1s;
+}
+.hamburger span:nth-child(1).active {
+  transform: rotate(45deg);
+}
+.hamburger span:nth-child(2).active {
+  transform: rotate(-45deg) translateX(5.5px) translateY(-5px);
+}
+
+.menu__center {
+  overflow: hidden;
+  position: relative;
+}
+.menu__center .menu_about {
+  position: relative;
+  padding-right: 60px;
+  line-height: 35px;
+}
+.menu__center .menu_about li {
+  position: relative;
+  font-weight: 500;
+  list-style: none;
+  left: 0;
+}
+.menu__center .menu_about li:hover {
+  opacity: 0.7;
+  transition: all 600ms ease;
+}
+.menu__center .menu_about li:nth-child(1) {
+  transition: left 600ms ease-out;
+}
+.menu__center .menu_about li:nth-child(2) {
+  transition: left 800ms ease-out;
+}
+.menu__center .menu_about li:nth-child(3) {
+  transition: left 1000ms ease-out;
+}
+
+header {
+  padding: 6.2rem 20%;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  position: relative;
+}
+header .buzz {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .infos-container .infos__title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 55px;
+  padding-right: 50px;
+  min-width: 220px;
+}
+header .infos-container .infos__title span {
+  font-size: 50px;
+}
+header .infos-container .infos__title-desc {
+  position: relative;
+  max-width: 570px;
+  font-size: 17px;
+  z-index: 2;
+}
+header .infos-container .infos__title-desc::after {
+  content: "UX/UI";
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 3.6em;
+  line-height: 0.8em;
+  letter-spacing: -0.7px;
+  opacity: 0.4;
+  top: -6px;
+  position: absolute;
+  right: 20px;
+  z-index: -1;
+}
+header .infos-container .infos__title-desc span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+main .main-title {
+  font-weight: 700;
+  padding-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+main .row .column {
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+main .row .column ul {
+  line-height: 30px;
+}
+main .row .column h2 {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 10px;
+  font-size: 27px;
+}
+main .row .column h2::after {
+  content: attr(data-step);
+  font-size: 40px;
+  color: #0f0f0f;
+  z-index: -1;
+  opacity: 1;
+  position: absolute;
+  left: -30px;
+  top: -27px;
+  font-weight: 800;
+}
+main .row .column ul li {
+  list-style: none;
+}
+
+/* transition: all 508ms cubic-bezier(.77, 0, .175, 1); */
+/* card */
+.card-container {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-right: 60px;
+  background: none;
+}
+
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  background: #fafafa;
+  transform: rotateY(180deg);
+}
+.card-back h1 {
+  color: #000;
+}/*# sourceMappingURL=blue.css.map */

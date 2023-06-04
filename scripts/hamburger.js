@@ -7,10 +7,8 @@ const redPageLinksEls = document.querySelectorAll(".red_container ul li a");
 
 hamburgerEl.addEventListener("click", () => {
     hamburgerElLines.forEach(span => span.classList.toggle("active"));
-
     pagesContainerEl.classList.toggle("menuIsActive")
     redPageEl.classList.toggle("active");
-
     navbar.classList.toggle("active");
 })
 
@@ -20,7 +18,6 @@ redPageLinksEls.forEach(el => {
     el.addEventListener("click", () => {
         redPageEl.classList.remove("active");
         pagesContainerEl.classList.remove("menuIsActive");
-
-        redPageEl.addEventListener("animationend", changeUrl.bind(el));
+        changeUrl(el);
     })
 })

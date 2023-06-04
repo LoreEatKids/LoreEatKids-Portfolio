@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/hamburger.js" defer></script>
+        <script src="scripts/gsap.js" defer></script>
+        <script src="scripts/menu.js" defer></script>
     <script src="https://kit.fontawesome.com/174d2a9ee4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/main.css">
     <title>LoreEatKids Home</title>
@@ -27,7 +29,7 @@
 
                 <div class="menu__center">
                     <ul class="menu_about">
-                        <li><a href="#">About Me</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
                         <li><a href="#works">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -149,11 +151,62 @@
                 </div>
             </div>
         </section>
-        <section class="green" id="aboutme"></section>
+
+        <section class="white" id="aboutme">
+            <div class="container d-f">
+                <h1 class="container__title">ALL ABOUT ME</h1>
+                <div class="container__articles d-f">
+                    <article>
+                        <div>
+                            <h1>EDUCATION</h1>
+                            <p>2020 - Present</p>
+                            <b>Computer Science Degree. Milan, Italy.</b>
+                        </div>
+                        <div class="stacks">
+                            <h1>TECH STACK</h1>
+                            <div class="stacks__icons">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-css3"></i>
+                                <i class="fa-brands fa-sass"></i>
+                                <i class="fa-brands fa-react"></i>
+                                <i class="fa-brands fa-python"></i>
+                                <i class="fa-brands fa-git"></i>
+    
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="experience">
+                            <h1>EXPERIENCE</h1>
+                            <span>
+                                <p>2019 - Present</p>
+                                <b>Web Developer Freelancer</b>
+                            </span>
+    
+                            <span>
+                                <p>Lifetime 01</p>
+                                <b>Supreme Master of Imaginary Debugging on Quantum Computers.</b>
+                            </span>
+    
+                            <span>
+                                <p>Lifetime 02</p>
+                                <b>Typing Speed Champion and Error Terminator.</b>
+                            </span>
+                        </div>
+                        <div class="fields">
+                            <h1>FIELDS</h1>
+                            <p>Full Stack Web Application</p>
+                            <p>Frontend Development</p>
+                            <p>Landing Page Killer</p>
+                            <p>Creative Designer</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="scripts/gsap.js"></script>
-    <script src="scripts/menu.js"></script>
 </body>
 </html>

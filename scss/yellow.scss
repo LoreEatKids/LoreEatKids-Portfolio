@@ -1,0 +1,79 @@
+@import "config";
+
+.yellow {
+  background-color: $yellow-page-bg;
+  background-image: url("/static/wave2.webp"), url("/static/wave3.webp");
+  background-position: center top -1px, center bottom -1px;
+  background-size: auto, 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  * {
+    color: #000080;
+  }
+
+  .projects-container .works__title {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 35px;
+  }
+
+  .projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-flow: wrap;
+  }
+
+  .projects-container .projects-wrapper .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .project {
+      min-width: 550px;
+      height: 300px;
+      border-radius: 15px;
+      background-color: $blue-page-bg;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover .project-child,
+      &:focus .project-child {
+        transform: scale(1.05);
+      }
+
+      .project-child {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        transition: transform 500ms;
+        position: relative;
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+      #minecraft {
+        background-image: url("../static/minecraft.webp");
+      }
+
+      #marketplace {
+        background-image: url("../static/marketplace.webp");
+      }
+    }
+  }
+
+  .project {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

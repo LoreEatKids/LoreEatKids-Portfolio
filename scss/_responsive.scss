@@ -1,5 +1,5 @@
 @include screen-lg {
-    .menu {display: none;}
+    .menu {display: none !important;}
 
     header {
         padding: 5% 100px !important;
@@ -31,7 +31,6 @@
             .blue {height: auto !important;}
             .blue,
             .yellow,
-            .green {background-image: unset !important;}
 
             .project {
                 min-width: 446px !important;

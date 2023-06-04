@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 *, html {
   scroll-behavior: smooth !important;
 }
@@ -74,7 +80,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .menu {
-    display: none;
+    display: none !important;
   }
   header {
     padding: 5% 100px !important;
@@ -105,13 +111,12 @@ body {
   }
   .blue,
   .yellow,
-  .green {
-    background-image: unset !important;
-  }
   .project {
     min-width: 446px !important;
     height: 261px !important;
   }
+  .blue .row,
+  .yellow .row,
   .project .row {
     flex-direction: row;
   }
@@ -157,44 +162,273 @@ body {
     gap: 60px;
   }
 }
-.container {
-  height: 100%;
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "aelvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.d-n {
+  display: none !important;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+input {
+  background: none;
   width: 100%;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  outline: none;
+  border: none;
 }
-.container.menuIsActive {
-  overflow: hidden;
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
 }
-.container section {
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+html, body {
+  cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.red {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: start;
+  z-index: 1;
+  background-color: #ff2f00;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+.red aside {
+  padding: 250px;
+  padding-left: 270px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+}
+.red aside .red_container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: unset !important;
+}
+.red aside .red_container__forms form {
+  flex-direction: column;
+}
+.red aside .red_container__forms form h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.red aside .red_container__forms input {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+.red aside .red_container__forms input:not(:last-child) {
+  margin-bottom: 15px;
+}
+.red aside .red_container__forms input::-moz-placeholder {
+  color: #fff;
+}
+.red aside .red_container__forms input::placeholder {
+  color: #fff;
+}
+.red aside .red_container__forms textarea {
+  width: 430px !important;
+  height: 115px !important;
+  padding: 3px;
+  color: #efecec;
+}
+.red aside .red_container__forms-textarea {
+  margin-top: 16px;
+  align-items: unset !important;
+}
+.red aside .red_container__forms-textarea h2 {
+  color: #fff;
+  margin-right: 40px;
+  font-size: 19px;
+}
+.red aside .red_container__forms button {
+  color: #fff;
+  font-size: 20px;
+}
+.red aside .red_container__forms button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  transition: width 300ms ease-in-out;
+}
+.red aside .red_container__forms button:hover::after {
+  width: 0%;
+}
+.red aside ul li {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: 400ms ease-out;
+}
+.red aside ul li a {
+  color: #fff;
+}
+.red aside ul li:hover {
+  opacity: 0.4;
+}
+.red aside .socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.red aside .socials i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.red.active {
+  transform: unset;
+}
+
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "aelvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.d-n {
+  display: none !important;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+input {
+  background: none;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+html, body {
+  cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .blue {
   background-color: #4801ff;
   background-image: url("/static/wave.webp");
   background-position: center bottom;
-  background-repeat: no-repeat;
 }
-
-.yellow {
-  background-color: #FFCC00;
-  background-image: url("/static/wave2.webp");
-  background-position: center top -1px;
-  background-repeat: no-repeat;
-}
-
-.green {
-  background-color: #013220;
-}
-
-.yellow * {
-  color: #000080;
-}
-
-/* left menu */
 .blue .menu {
   position: fixed;
   z-index: 2;
@@ -272,7 +506,7 @@ body {
   cursor: pointer;
 }
 .hamburger span {
-  background: #fff;
+  background: #7e7d7d;
   width: 24px;
   height: 3px;
   display: block;
@@ -321,8 +555,6 @@ body {
   transition: left 1000ms ease-out;
 }
 
-/* menu_center transition style */
-/* blue page style */
 header {
   padding: 6.2rem 20%;
   padding-bottom: 4rem;
@@ -454,35 +686,117 @@ main .row .column ul li {
   color: #000;
 }
 
-/* end card */
-/* yellow */
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "aelvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.d-n {
+  display: none !important;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+input {
+  background: none;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+html, body {
+  cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 .yellow {
+  background-color: #FFCC00;
+  background-image: url("/static/wave2.webp"), url("/static/wave3.webp");
+  background-position: center top -1px, center bottom -1px;
+  background-size: auto, 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
-.projects-container .works__title {
+.yellow * {
+  color: #000080;
+}
+.yellow .projects-container .works__title {
   text-align: center;
   padding-bottom: 30px;
   font-size: 35px;
 }
-
-.projects-wrapper {
+.yellow .projects-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   flex-flow: wrap;
 }
-
-.projects-container .projects-wrapper .row {
+.yellow .projects-container .projects-wrapper .row {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.projects-container .projects-wrapper .row .project {
+.yellow .projects-container .projects-wrapper .row .project {
   min-width: 550px;
   height: 300px;
   border-radius: 15px;
@@ -490,10 +804,10 @@ main .row .column ul li {
   overflow: hidden;
   cursor: pointer;
 }
-.projects-container .projects-wrapper .row .project:hover .project-child, .projects-container .projects-wrapper .row .project:focus .project-child {
+.yellow .projects-container .projects-wrapper .row .project:hover .project-child, .yellow .projects-container .projects-wrapper .row .project:focus .project-child {
   transform: scale(1.05);
 }
-.projects-container .projects-wrapper .row .project .project-child {
+.yellow .projects-container .projects-wrapper .row .project .project-child {
   width: 100%;
   height: 100%;
   background-position: center;
@@ -501,122 +815,94 @@ main .row .column ul li {
   transition: transform 500ms;
   position: relative;
 }
-.projects-container .projects-wrapper .row .project .project-child a {
+.yellow .projects-container .projects-wrapper .row .project .project-child a {
   width: 100%;
   height: 100%;
   display: block;
 }
-.projects-container .projects-wrapper .row .project #minecraft {
+.yellow .projects-container .projects-wrapper .row .project #minecraft {
   background-image: url("../static/minecraft.webp");
 }
-.projects-container .projects-wrapper .row .project #marketplace {
+.yellow .projects-container .projects-wrapper .row .project #marketplace {
   background-image: url("../static/marketplace.webp");
 }
-
-.project {
+.yellow .project {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.red {
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
-  background-color: #ff2f00;
-  position: absolute;
-  transform: translateX(-100%);
-  transition: transform 300ms ease-in-out;
+.white {
+  background-color: #d9d9d9;
 }
-.red aside {
-  padding: 250px;
-  padding-left: 270px;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  height: 100%;
+.white * {
+  color: #28608b;
 }
-.red aside .red_container {
-  width: 100%;
-  justify-content: space-between;
-  align-items: unset !important;
-}
-.red aside .red_container__forms form {
+.white .container {
+  justify-content: center;
   flex-direction: column;
 }
-.red aside .red_container__forms form h1 {
-  color: #fff;
-  text-align: left;
-  font-size: 30px;
-  margin-bottom: 20px;
+.white .container__title {
+  font-size: 35px !important;
+  margin-bottom: 40px;
 }
-.red aside .red_container__forms input {
-  border-bottom: 1px solid #fff;
+.white .container__articles {
+  gap: 150px;
+}
+.white .container h1 {
+  font-family: "Brice";
+  font-size: 29px;
+  letter-spacing: 0.7px;
   padding-bottom: 10px;
-  color: #fff;
-  font-size: 15px;
 }
-.red aside .red_container__forms input:not(:last-child) {
-  margin-bottom: 15px;
+.white .container article {
+  width: 400px;
 }
-.red aside .red_container__forms input::-moz-placeholder {
-  color: #fff;
+.white .container article div h1 {
+  font-size: 29px;
 }
-.red aside .red_container__forms input::placeholder {
-  color: #fff;
+.white .container article div.experience {
+  display: flex;
+  flex-direction: column;
 }
-.red aside .red_container__forms textarea {
-  width: 430px !important;
-  height: 115px !important;
-  padding: 3px;
-  color: #efecec;
+.white .container article div.stacks {
+  flex-direction: column;
 }
-.red aside .red_container__forms-textarea {
-  margin-top: 16px;
-  align-items: unset !important;
+.white .container article div.stacks__icons {
+  display: flex;
+  gap: 15px;
 }
-.red aside .red_container__forms-textarea h2 {
-  color: #fff;
-  margin-right: 40px;
+.white .container article div.stacks__icons i {
+  font-size: 29px;
+}
+.white .container article div.fields p {
+  font-style: unset !important;
+}
+.white .container article div:not(:last-child) {
+  padding-bottom: 40px;
+}
+.white .container article div span:not(:last-child) {
+  padding-bottom: 16px;
+}
+.white .container article div * {
   font-size: 19px;
 }
-.red aside .red_container__forms button {
-  color: #fff;
-  font-size: 20px;
-}
-.red aside .red_container__forms button::after {
-  content: "";
-  display: block;
-  width: 100%;
-  border-bottom: 2px solid #fff;
-  transition: width 300ms ease-in-out;
-}
-.red aside .red_container__forms button:hover::after {
-  width: 0%;
-}
-.red aside ul li {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  transition: 400ms ease-out;
-}
-.red aside ul li a {
-  color: #fff;
-}
-.red aside ul li:hover {
-  opacity: 0.4;
-}
-.red aside .socials {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-.red aside .socials i {
-  font-size: 30px;
-  cursor: pointer;
+.white .container article div p {
+  font-style: italic;
 }
 
-.red.active {
-  transform: unset;
+.container {
+  height: 100%;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.container.menuIsActive {
+  overflow: hidden;
+}
+.container section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

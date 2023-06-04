@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Brice";
+  src: url("../static/fonts/Brice-BlackSemiExpanded.woff"), url("../static/fonts/Brice-BlackSemiExpanded.woff2"), url("Brice-BlackSemiExpanded.woff2") format("woff2"), url("Brice-BlackSemiExpanded.woff") format("woff"), url("Brice-BlackSemiExpanded.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+*, html {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "aelvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+}
+
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.d-n {
+  display: none !important;
+}
+
+.s-b {
+  justify-content: space-between;
+}
+
+.title-t {
+  transition: left 1.3s ease-in-out;
+}
+
+.title-t2 {
+  transform: left 100ms ease-out;
+}
+
+input {
+  background: none;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+html, body {
+  cursor: url(https://d2kq0urxkarztv.cloudfront.net/62918b8162208e003d6a4d2c/upload-3a52e9c5-65bc-4201-9031-d8d65f463b99.png), auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.red {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: #ff2f00;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+.red aside {
+  padding: 250px;
+  padding-left: 270px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+}
+.red aside .red_container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: unset !important;
+}
+.red aside .red_container__forms form {
+  flex-direction: column;
+}
+.red aside .red_container__forms form h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.red aside .red_container__forms input {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+.red aside .red_container__forms input:not(:last-child) {
+  margin-bottom: 15px;
+}
+.red aside .red_container__forms input::-moz-placeholder {
+  color: #fff;
+}
+.red aside .red_container__forms input::placeholder {
+  color: #fff;
+}
+.red aside .red_container__forms textarea {
+  width: 430px !important;
+  height: 115px !important;
+  padding: 3px;
+  color: #efecec;
+}
+.red aside .red_container__forms-textarea {
+  margin-top: 16px;
+  align-items: unset !important;
+}
+.red aside .red_container__forms-textarea h2 {
+  color: #fff;
+  margin-right: 40px;
+  font-size: 19px;
+}
+.red aside .red_container__forms button {
+  color: #fff;
+  font-size: 20px;
+}
+.red aside .red_container__forms button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  transition: width 300ms ease-in-out;
+}
+.red aside .red_container__forms button:hover::after {
+  width: 0%;
+}
+.red aside ul li {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: 400ms ease-out;
+}
+.red aside ul li a {
+  color: #fff;
+}
+.red aside ul li:hover {
+  opacity: 0.4;
+}
+.red aside .socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.red aside .socials i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.red.active {
+  transform: unset;
+}/*# sourceMappingURL=red.css.map */

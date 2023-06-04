@@ -1,6 +1,6 @@
 const navbar = document.querySelector(".menu");
 const bluePage = document.querySelector(".blue");
-const greenPage = document.querySelector(".green");
+const whitePage = document.querySelector(".white");
 const redPage = document.querySelector(".red");
 
 const titleDefault = document.querySelector(".menu_top_title");
@@ -9,11 +9,6 @@ const titleSecondary = document.querySelector(".menu_title_active");
 const menuAboutItems = document.querySelectorAll(".menu_about li");
 
 const myWorksEl = document.querySelector(".menu__works");
-
-// menuHamburgerCheckbox.addEventListener("click", ()=> {
-//   redPage.classList.toggle("active");
-//   bluePage.style.display = greenPage.style.display = "none"
-// })
 
 const animation = {
   handleMenuTop() {
