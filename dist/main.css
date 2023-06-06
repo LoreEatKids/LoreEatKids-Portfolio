@@ -506,7 +506,7 @@ body {
   cursor: pointer;
 }
 .hamburger span {
-  background: #7e7d7d;
+  background: #fff;
   width: 24px;
   height: 3px;
   display: block;
