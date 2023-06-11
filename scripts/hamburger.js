@@ -12,12 +12,21 @@ hamburgerEl.addEventListener("click", () => {
     navbar.classList.toggle("active");
 })
 
-const changeUrl = el => location.href = el.href
+const changeUrl = el => {
+    const href = el.href;
+    const hfefRaw = el.getAttribute("href").slice(1);
+    
+    location.href = href;
+
+    if(hfefRaw === "works" || "aboutme") navbar.classList.add("active");
+    else navbar.classList.remove("active")
+}
 
 redPageLinksEls.forEach(el => {
     el.addEventListener("click", () => {
-        redPageEl.classList.remove("active");
+        hamburgerElLines.forEach(span => span.classList.remove("active"));
         pagesContainerEl.classList.remove("menuIsActive");
+        redPageEl.classList.remove("active");
         changeUrl(el);
     })
 })
