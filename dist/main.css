@@ -79,7 +79,7 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
-  .menu {
+  .menu, .red {
     display: none !important;
   }
   header {
@@ -97,8 +97,11 @@ body {
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 1150px) {
-  .blue {
+  .blue, .yellow {
     height: auto !important;
+  }
+  .blue main {
+    height: 450px;
   }
   header {
     padding: 5% 5% !important;
@@ -154,18 +157,67 @@ body {
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 700px) and (max-width: 600px) {
+  .blue {
+    height: 190vh !important;
+  }
+  .blue main {
+    height: unset !important;
+  }
+  .yellow {
+    height: 145vh !important;
+  }
   .white {
-    height: 135vh !important;
+    height: 130vh !important;
   }
   main .row {
     flex-direction: column;
     margin-top: 20px;
     gap: 20px;
   }
+  .project {
+    min-width: 383px !important;
+    height: 214px !important;
+  }
 }
 @media screen and (max-width: 1300px) and (max-width: 700px) and (max-width: 500px) {
   main .row {
     gap: 60px;
+  }
+}
+@media screen and (max-width: 1300px) and (max-width: 700px) and (max-width: 400px) {
+  .project {
+    min-width: 315px !important;
+    height: 165px !important;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 750px) {
+  .white {
+    height: 160vh !important;
+  }
+}
+@media screen and (max-width: 600px) and (max-height: 770px) {
+  .blue {
+    height: 200vh !important;
+  }
+  .white {
+    height: auto !important;
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 385px) and (max-height: 740px) {
+  .yellow {
+    height: auto !important;
+  }
+  .blue {
+    height: 205vh !important;
+  }
+  .white {
+    padding: 150px 0 !important;
+  }
+}
+@media screen and (max-width: 385px) and (max-height: 700px) {
+  .blue {
+    height: 225vh !important;
   }
 }
 @font-face {
