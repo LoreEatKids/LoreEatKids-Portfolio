@@ -898,6 +898,9 @@ body {
 .yellow .projects-container .projects-wrapper .row .project #marketplace {
   background-image: url("../static/marketplace.webp");
 }
+.yellow .projects-container .projects-wrapper .row .project #whatsapp {
+  background-image: url("../static/whatsapp.png");
+}
 .yellow .project {
   background-position: center;
   background-repeat: no-repeat;
